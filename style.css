@@ -1,0 +1,223 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.window{
+    width: 19rem;
+    height: 15rem;
+    position: absolute;
+    border-radius: 10px;
+    top: 10%;
+    left: 25%;
+    box-shadow: .8rem .5rem .2rem rgba(0,0,0,0.8);
+    
+    background: #2980B9;
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+}
+
+.window-itens{
+    display: flex;
+    flex-direction: column;
+    margin-top: .6rem;
+    align-items: center;
+}   
+
+.para{
+    margin-left: .8rem;
+}
+
+
+.window label{
+    font-weight: bolder;
+}
+
+#email{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    border: 1px solid #191818;
+    display: flex;
+    justify-content: center;
+}
+
+#email:focus{
+    font-weight: bolder;
+    font-size: .9rem;
+    margin-top: 5px;
+    margin-bottom: .2rem;
+}
+
+.btn{
+    border-radius: 5px;
+    border: black;
+    padding: .2rem 1.5rem;
+    background: #2980B9;
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+    cursor: pointer;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+}
+
+.window h1{
+    border-bottom: 2px solid black;
+}
+
+aside{
+    background-color: rgba(0,0,0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+aside .aside-show{
+    z-index: 100;
+}
+
+#endpage{
+    position: fixed;
+    top: 12%;
+    right: 15%;
+    color: black;
+    z-index: 101;
+    font-size: 1.5rem;
+    background: #f12711;
+    background: -webkit-linear-gradient(to top, #f5af19, #f12711);
+    background: linear-gradient(to top, #f5af19, #f12711);
+    padding: .3rem .6rem;
+    border-radius: 50%;
+}
+
+#endpage:hover{
+    background: #f12711;
+    background: -webkit-linear-gradient(to left, #f5af19, #f12711);
+    background: linear-gradient(to left, #f5af19, #f12711);
+}
+
+.window-cadastro{
+    width: 22rem;
+    height: 18rem;
+    position: absolute;
+    border-radius: 10px;
+    top: 10%;
+    left: 25%;
+    box-shadow: .8rem .5rem .2rem rgba(0,0,0,0.8);
+    background: #f12711;
+    background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
+    background: linear-gradient(to bottom, #f5af19, #f12711);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field{
+    margin-top: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid red;
+    outline: none;
+    border-radius: 2px;
+    color: #000;
+}
+
+input::placeholder {
+    color: black;
+  }
+
+.input-field:focus{
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.checkboxdiv{
+    margin-left: 2rem;
+}
+
+.window-cadastro p{
+    margin-top: .5rem;
+}
+
+.ic-button{
+    width: 100%;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.ic-button ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
+    background: linear-gradient(to bottom, #f5af19, #f12711);
+    padding: .7rem 6rem;
+    border-radius: 8px;
+}
+
+.ic-button i{
+    color: #000;
+    font-size: 1.4rem;
+    background: -webkit-linear-gradient(to top, #f5af19, #f12711);
+    background: linear-gradient(to top, #f5af19, #f12711);
+    border-radius: 50%;
+    padding: .2rem 1rem;
+}
+
+.ic-button i:hover{
+    background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
+    background: linear-gradient(to bottom, #f5af19, #f12711);
+}
+
+.btn-aside{
+    border-radius: 5px;
+    border: black;
+    padding: .2rem 1.5rem;
+    background: #2980B9;
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    background: linear-gradient(to right, #f5af19, #f12711);
+    cursor: pointer;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+}
+
+.btn-aside:hover{
+    background: #f12711;
+    background: -webkit-linear-gradient(to left, #f5af19, #f12711);
+    background: linear-gradient(to left, #f5af19, #f12711);
+}

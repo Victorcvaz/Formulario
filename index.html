@@ -8,7 +8,53 @@
     <title>Formulário de cadastro</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <div class="wrapper">
+                <img src="./imagens/fundo.jpg" alt="imagem de fundo">
+            </div>
+            <form class="window">
+                <div class="window-itens">
+                <h1 class="titulo">Evento program++</h1>
+                </div>
+                <div class="window-itens">
+                    <h5>Descrição:</h5>
+                    <p class="para">Evento para desenvolvedores focados em aprimorar suas habilidades e cooperar com equipes durante o processo de aprendizado.</p>
+                </div>
+                <div class="window-itens">
+                <p>Para participar basta se cadastrar abaixo</p>
+                </div>
+                <div class="window-itens">
+                    <label for="email">Email:</label>
+                <input type="text" id="email" size="30" placeholder="                Digite o seu Email">
+                <button class="btn">Enviar</button>
+                 </div>
+            </form>
+        </header>
+        <aside>
+            <i class="fa-solid fa-xmark" id="endpage"></i>
+            <form class="window-cadastro">
+                <input type="text" class="input-field" placeholder="Nome completo">
+                <input type="text" class="input-field" placeholder="Nome de usuário">
+                <input type="password" class="input-field" placeholder="Senha">
+                <input type="password" class="input-field" placeholder="Confirme a senha">
+                <div class="checkboxdiv">
+                    <input type="checkbox" name="termos" class="input-field check">
+                    Você concorda com os <a>Termos de Uso</a> do <strong>FishProjecs</strong>
+                </div>
+                <button class="btn-aside">Cadastrar</button>
+                <p>Entrar com redes sociais:</p>
+                <div class="ic-button">
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a><li>
+                            <li class="google"><a href=""><i class="fab fa-google"></i></a></li>
+                            
+                        </ul>
+                    </div>
+            </form>
+        </aside>
+        
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
