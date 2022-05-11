@@ -95,24 +95,23 @@ header{
     border-bottom: 2px solid black;
 }
 
-aside{
-    background-color: rgba(0,0,0, 0.9);
+.a-aside{
+    background-color: rgba(0,0,0, 0.8);
     position: fixed;
-    top: 0;
+    top: -100;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -1;
+    z-index: 150;
 }
 
-aside .aside-show{
-    z-index: 100;
+.a-aside.aside-show{
+    top: 0;
 }
 
 #endpage{
     position: fixed;
-    top: 12%;
-    right: 15%;
+    right: 5.5rem;
     color: black;
     z-index: 101;
     font-size: 1.5rem;
@@ -121,6 +120,7 @@ aside .aside-show{
     background: linear-gradient(to top, #f5af19, #f12711);
     padding: .3rem .6rem;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #endpage:hover{
