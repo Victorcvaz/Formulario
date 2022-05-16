@@ -45,6 +45,8 @@ document.querySelector('.btn-aside').addEventListener('click', ()=> {
     }else{
     const checkb = document.querySelector(".check").checked
     if(checkb){
+        confirmsenhaA = Number(confirmsenhaA)
+        senha = Number(senha)
         emailA.push(email)
         nomeA.push(nome)
         usuarioA.push(usuario)
