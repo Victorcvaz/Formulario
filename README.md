@@ -1,2 +1,2 @@
-# Formulario
-formulário-cadastro
+# Registration screen
+
